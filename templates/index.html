@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course API UI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>📚 Course Management System</h1>
+
+    <!-- Add Course Form -->
+    <div class="form-container">
+        <h2>Add Course</h2>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="instructor" placeholder="Instructor">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="price" placeholder="Price">
+        <input type="number" id="duration" placeholder="Duration (hrs)">
+        <input type="number" id="discount" placeholder="Discount %">
+        <button onclick="addCourse()">Add Course</button>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter">
+        <h2>Filter</h2>
+        <input type="number" id="maxPrice" placeholder="Max Price">
+        <button onclick="filterCourses()">Apply Filter</button>
+    </div>
+
+    <!-- Courses List -->
+    <h2>All Courses</h2>
+    <div id="courseList"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
