@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from routers import routers
+from database import engine, get_db
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
